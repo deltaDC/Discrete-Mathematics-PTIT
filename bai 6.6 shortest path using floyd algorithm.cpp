@@ -19,11 +19,6 @@ void ktao()
 	}
 }
 
-void floyd()
-{
-	
-}
-
 int main() {
     cin >> n;
     for(int i = 1; i <= n; i++)
@@ -31,24 +26,9 @@ int main() {
     	for(int j = 1; j <= n; j++)
     	{
     		cin >> a[i][j];
-		}
 	}
+    }
     ktao();
-//	for(int i = 1; i <= n; i++)
-//    {
-//    	for(int j = 1; j <= n; j++)
-//    	{
-//    		if(a[i][j] != 0)
-//    		{
-//    			d[i][j] = d[j][i] = a[i][j];
-//			}
-//		}
-//	}
-//    for(int i = 0; i < m; i++)
-//    {
-//    	int x, y, w; cin >> x >> y >> w;
-//    	d[x][y] = d[y][x] = w;
-//	}
 	for(int k = 1; k <= n; k++)
 	{
 		for(int i = 1; i <= n; i++)
@@ -60,10 +40,10 @@ int main() {
 		}
 	}
 	for(int i = 1; i <= n; i++)
-    {
-    	for(int j = 1; j <= n; j++)
-    	{
-    		cout << d[i][j] << " ";
+        {
+		for(int j = 1; j <= n; j++)
+		{
+			cout << d[i][j] << " ";
 		}
 		cout << endl;
 	}
